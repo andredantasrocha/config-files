@@ -2,6 +2,7 @@ cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'puma/puma'
 
+brew 'git'
 brew 'zsh'
 brew 'rbenv'
 brew 'ruby-build'
@@ -29,3 +30,5 @@ cask 'vlc'
 cask '1password'
 cask 'slack'
 cask 'skype'
+
+mas 'typist', id: 415166115
