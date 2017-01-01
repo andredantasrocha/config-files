@@ -30,5 +30,7 @@ cask 'vlc'
 cask '1password'
 cask 'slack'
 cask 'skype'
+cask 'keybase'
+cask 'spotify'
 
 mas 'typist', id: 415166115
