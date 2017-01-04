@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 tap 'caskroom/cask'
 tap 'puma/puma'
+tap 'homebrew/services'
 
 brew 'git'
 brew 'zsh'
@@ -12,6 +13,7 @@ brew 'awscli'
 brew 'chromedriver'
 brew 'wget'
 brew 'puma/puma/puma-dev'
+brew 'node'
 
 cask 'aws-vault'
 cask 'docker'
@@ -32,5 +34,6 @@ cask 'slack'
 cask 'skype'
 cask 'keybase'
 cask 'spotify'
+cask 'transmission'
 
 mas 'typist', id: 415166115
