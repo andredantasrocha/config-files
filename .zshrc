@@ -1,11 +1,15 @@
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="sporty_256"
 
 alias be="bundle exec"
 alias gpm="git checkout master; git pull"
 alias gp="git pull"
-alias gpf="branch_name=$(git rev-parse --abbrev-ref HEAD); if [ $branch_name = 'master' ]; then echo 'On master branch... Aborting'; else git push -f origin $branch_name; fi"
-alias gpo="branch_name=$(git rev-parse --abbrev-ref HEAD); if [ $branch_name = 'master' ]; then echo 'On master branch... Aborting'; else git push --set-upstream origin $branch_name; fi"
 alias gcb="git checkout -b"
 alias gbD="git branch -D"
 alias gb="git branch"
-alias gclean="git fetch -p &&git branch -vv | grep ': gone]' | awk -F' ' '{printf $1}' | xargs -0 git branch -D"
+alias gc="git checkout"
+alias gh="git log --all --graph --decorate --oneline"
